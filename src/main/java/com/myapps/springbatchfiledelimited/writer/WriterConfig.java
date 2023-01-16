@@ -11,11 +11,10 @@ public class WriterConfig {
     @Bean
     public ItemWriter<Customer> fileDelimitedWriter() {
         return items -> {
-            for(Customer customer : items) {
+            for (Customer customer : items) {
                 System.out.println(customer.toString());
             }
         };
-
     }
 
 }
