@@ -5,12 +5,10 @@ set ENV_FILE=environment.env
 call :CHECK_IS_ADMIN IS_ADMIN
 
 if %IS_ADMIN%==true (
-    set CUR_DIR=%CD%
     cd docker
     echo.
     echo Starting using the environment file %ENV_FILE%...
     docker compose --env-file ../%ENV_FILE% up -d
-    cd %CUR_DIR%
 ) else (
     echo.
     echo WARNING: THIS SCRIPT MUST BE EXECUTED WITH ADMINISTRATOR PRIVILEGES, EXITING.
