@@ -48,5 +48,5 @@
     - You don't need to stop the application if you want to run it again.
 
 Log image with working example:
-- **Linux**: [xxx](xxx)
+- **Linux**: [spring-batch-file-delimited](https://i.imgur.com/W0qwHOJ.png)
 - **Windows**: [spring-batch-file-delimited](https://i.imgur.com/4FhNSsf.png)
